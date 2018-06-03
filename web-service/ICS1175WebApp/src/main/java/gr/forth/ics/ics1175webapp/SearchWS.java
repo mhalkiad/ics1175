@@ -26,7 +26,6 @@ public class SearchWS {
     
     private static String url = "jdbc:postgresql://localhost:5432/ics1175";
     private static Connection con = null;
-   // private static java.sql.Statement sqlStmt = null;
     private static ResultSet rs = null;
     private static PreparedStatement st = null;
     private static ArrayList<String> literalArray = null;
@@ -57,10 +56,6 @@ public class SearchWS {
             
             // create a JSON array with the matching literals 
             responseLiterals = new JSONArray(literalArray);
-                        
-            // close Postgres connections
-            rs.close();
-            st.close();
         } 
         catch (SQLException e) {
             e.printStackTrace();
@@ -75,6 +70,9 @@ public class SearchWS {
                 }
                 if (st != null ) { 
                     st.close(); 
+                }
+                if (rs != null) {
+                    rs.close();
                 }
             } catch (SQLException e) {
                 e.printStackTrace();
