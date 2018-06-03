@@ -1,0 +1,95 @@
+@prefix schema: <http://schema.org/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml:   <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix fdont: <http://data.itatti.harvard.edu/florentinedrawings/ontologies/> .
+@prefix fd:    <https://collection.itatti.harvard.edu/resource/work/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<https://collection.itatti.harvard.edu/resource/work/North%20Atlantic%20Ocean/country>
+        a           crm:WaterArea ;
+        rdfs:label  "North Atlantic Ocean" .
+
+<https://collection.itatti.harvard.edu/resource/work/Scorpio%20scorpio/sname>
+        a           crm:E42_Identifier ;
+        rdfs:label  "Scorpio scorpio" .
+
+<https://collection.itatti.harvard.edu/resource/work/Mediterranean%20Sea/country>
+        a           crm:WaterArea ;
+        rdfs:label  "Mediterranean Sea" .
+
+<https://collection.itatti.harvard.edu/resource/work/Doplhinus%20aurius/sname>
+        a           crm:E42_Identifier ;
+        rdfs:label  "Doplhinus aurius" .
+
+<https://collection.itatti.harvard.edu/resource/work/Pacific%20Ocean/cname>
+        a           crm:E42_Identifier ;
+        rdfs:label  "Pacific Ocean" .
+
+<https://collection.itatti.harvard.edu/resource/work/Pacific%20Ocean/country>
+        a           crm:WaterArea ;
+        rdfs:label  "Pacific Ocean" .
+
+<https://collection.itatti.harvard.edu/resource/work/Greece/country>
+        a           crm:Country ;
+        rdfs:label  "Greece" .
+
+<https://collection.itatti.harvard.edu/resource/work/Brazil/country>
+        a           crm:Country ;
+        rdfs:label  "Brazil" .
+
+<https://collection.itatti.harvard.edu/resource/work/Yellowfin%20Tuna/cname>
+        a           crm:E42_Identifier ;
+        rdfs:label  "Yellowfin Tuna" .
+
+<https://collection.itatti.harvard.edu/resource/work/Thunnus%20alalunga/sname>
+        a           crm:E42_Identifier ;
+        rdfs:label  "Thunnus alalunga" .
+
+<https://collection.itatti.harvard.edu/resource/work/China/country>
+        a           crm:Country ;
+        rdfs:label  "China" .
+
+<https://collection.itatti.harvard.edu/resource/work/Thunnus%20alalunga/fish>
+        a                        crm:Fish ;
+        crm:P1_is_identified_by  <https://collection.itatti.harvard.edu/resource/work/Pacific%20Ocean/cname> , <https://collection.itatti.harvard.edu/resource/work/Thunnus%20alalunga/sname> ;
+        crm:is_native_in         <https://collection.itatti.harvard.edu/resource/work/Pacific%20Ocean/country> , <https://collection.itatti.harvard.edu/resource/work/China/country> .
+
+<https://collection.itatti.harvard.edu/resource/work/Mediterranean%20Sea/cname>
+        a           crm:E42_Identifier ;
+        rdfs:label  "Mediterranean Sea" .
+
+<https://collection.itatti.harvard.edu/resource/work/Scorpio%20scorpio/fish>
+        a                        crm:Fish ;
+        crm:P1_is_identified_by  <https://collection.itatti.harvard.edu/resource/work/Mediterranean%20Sea/cname> , <https://collection.itatti.harvard.edu/resource/work/Scorpio%20scorpio/sname> ;
+        crm:is_native_in         <https://collection.itatti.harvard.edu/resource/work/Mediterranean%20Sea/country> , <https://collection.itatti.harvard.edu/resource/work/Greece/country> .
+
+<https://collection.itatti.harvard.edu/resource/work/USA/country>
+        a           crm:Country ;
+        rdfs:label  "USA" .
+
+<https://collection.itatti.harvard.edu/resource/work/South%20Atlantic%20Ocean/country>
+        a           crm:WaterArea ;
+        rdfs:label  "South Atlantic Ocean" .
+
+<https://collection.itatti.harvard.edu/resource/work/Doplhinus%20aurius/fish>
+        a                        crm:Fish ;
+        crm:P1_is_identified_by  <https://collection.itatti.harvard.edu/resource/work/Dolphin/cname> , <https://collection.itatti.harvard.edu/resource/work/Doplhinus%20aurius/sname> ;
+        crm:is_native_in         <https://collection.itatti.harvard.edu/resource/work/North%20Atlantic%20Ocean/country> , <https://collection.itatti.harvard.edu/resource/work/USA/country> .
+
+<https://collection.itatti.harvard.edu/resource/work/Dolphin/cname>
+        a           crm:E42_Identifier ;
+        rdfs:label  "Dolphin" .
+
+<https://collection.itatti.harvard.edu/resource/work/Thunnus%20albacares/fish>
+        a                        crm:Fish ;
+        crm:P1_is_identified_by  <https://collection.itatti.harvard.edu/resource/work/Yellowfin%20Tuna/cname> , <https://collection.itatti.harvard.edu/resource/work/Thunnus%20albacares/sname> ;
+        crm:is_native_in         <https://collection.itatti.harvard.edu/resource/work/South%20Atlantic%20Ocean/country> , <https://collection.itatti.harvard.edu/resource/work/Brazil/country> .
+
+<https://collection.itatti.harvard.edu/resource/work/Thunnus%20albacares/sname>
+        a           crm:E42_Identifier ;
+        rdfs:label  "Thunnus albacares" .
